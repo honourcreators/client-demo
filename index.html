@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- css  -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- slider  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- fancybox  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    />
+    <!-- title  -->
+    <title>Fastech Fashion</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <h1 class="navbar-brand">
+          <img
+            src="./assets/hamburger.svg"
+            alt="menu"
+            class="img-fluid"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          />
+        </h1>
+        <img src="./assets/logo.png" alt="logo" class="img-fluid logo" />
+        <button class="primary">Get a Quote</button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="./assets/logo.png" alt="logo" class="img-fluid w-50" />
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="offcanvasNavbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Custom T-Shirt</a></li>
+                  <li><a class="dropdown-item" href="#">Custom Mug</a></li>
+                  <li><a class="dropdown-item" href="#">Custom T-Shirt</a></li>
+                  <li><a class="dropdown-item" href="#">Custom Mug</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hero  -->
+    <section
+      class="
+        container-fluid
+        hero-section
+        d-flex
+        justify-content-center
+        align-items-center
+      "
+    >
+      <header class="text-center text-light">
+        <h4>Welcome to</h4>
+        <h1>Fastech Fashion Pvt Ltd.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="primary large mt-2">Read More</button>
+      </header>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,224L80,202.7C160,181,320,139,480,149.3C640,160,800,224,960,224C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- about us  -->
+    <section class="about container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <img src="./assets/about.png" alt="about us" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <div class="content">
+              <h2>About Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum eveniet cum similique voluptates repellendus
+                doloremque vero odit omnis consequatur
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum eveniet cum similique voluptates repellendus
+                doloremque vero odit omnis consequatur, delectus fugiat quisquam
+                molestias eos veritatis eaque totam ullam! Officiis, quasi.
+              </p>
+              <button class="primary">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our products -->
+    <section class="container-fluid products">
+      <div class="container">
+        <header>
+          <h2>Our Products</h2>
+          <p>Lorem ipsum simply dummy text for sample</p>
+        </header>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="product-card">
+              <div
+                class="background-image"
+                style="
+                  background-image: linear-gradient(
+                      to top,
+                      rgba(0, 0, 0, 0.6),
+                      rgba(0, 0, 0, 0.1)
+                    ),
+                    url('./assets/custom-shirt.jpg');
+                "
+              ></div>
+              <h4>Custom Shirts</h4>
+              <button>Get a Quote</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="product-card">
+              <div
+                class="background-image"
+                style="
+                  background-image: linear-gradient(
+                      to top,
+                      rgba(0, 0, 0, 0.6),
+                      rgba(0, 0, 0, 0.1)
+                    ),
+                    url('./assets/custom-mug.jpg');
+                "
+              ></div>
+              <h4>Custom Mugs</h4>
+              <button>Get a Quote</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="product-card">
+              <div
+                class="background-image"
+                style="
+                  background-image: linear-gradient(
+                      to top,
+                      rgba(0, 0, 0, 0.6),
+                      rgba(0, 0, 0, 0.1)
+                    ),
+                    url('./assets/custom-shirt.jpg');
+                "
+              ></div>
+              <h4>Custom Shirts</h4>
+              <button>Get a Quote</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="product-card">
+              <div
+                class="background-image"
+                style="
+                  background-image: linear-gradient(
+                      to top,
+                      rgba(0, 0, 0, 0.6),
+                      rgba(0, 0, 0, 0.1)
+                    ),
+                    url('./assets/custom-mug.jpg');
+                "
+              ></div>
+              <h4>Custom Mugs</h4>
+              <button>Get a Quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- clients -->
+    <section class="container-fluid clients">
+      <div class="container">
+        <header>
+          <h2>Our Clients</h2>
+        </header>
+        <div class="client-slider">
+          <div class="client-card">
+            <div class="content">
+              <img
+                src="./assets/clients/haneulpublication.png"
+                alt="ada enterprises"
+              />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img
+                src="./assets/clients/inexttechnology.png"
+                alt="ada enterprises"
+              />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img src="./assets/clients/marble.png" alt="ada enterprises" />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img src="./assets/clients/ourvoix.png" alt="ada enterprises" />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img src="./assets/clients/tashukeru.png" alt="ada enterprises" />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img src="./assets/clients/voyagers.png" alt="ada enterprises" />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img
+                src="./assets/clients/haneulpublication.png"
+                alt="ada enterprises"
+              />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img
+                src="./assets/clients/inexttechnology.png"
+                alt="ada enterprises"
+              />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img src="./assets/clients/marble.png" alt="ada enterprises" />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img src="./assets/clients/ourvoix.png" alt="ada enterprises" />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img src="./assets/clients/tashukeru.png" alt="ada enterprises" />
+            </div>
+          </div>
+          <div class="client-card">
+            <div class="content">
+              <img src="./assets/clients/voyagers.png" alt="ada enterprises" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our services -->
+    <section class="container-fluid services">
+      <div class="container">
+        <header>
+          <h2>Our Services</h2>
+          <p>Lorem ipsum simply dummy text for sample</p>
+        </header>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="./assets/print.png"
+                alt="digital printing"
+                class="img-fluid service-img"
+              />
+              <h6>Digital Printing</h6>
+              <p>
+                lorem ipsum is simply dummy text of the printing and types in
+                the industry print
+              </p>
+              <img src="./assets/arrow-right-circle.svg" alt="right arrow" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card c2">
+              <img
+                src="./assets/print.png"
+                alt="digital printing"
+                class="img-fluid service-img"
+              />
+              <h6>Digital Printing</h6>
+              <p>
+                lorem ipsum is simply dummy text of the printing and types in
+                the industry print
+              </p>
+              <img src="./assets/arrow-right-circle.svg" alt="right arrow" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card c3">
+              <img
+                src="./assets/print.png"
+                alt="digital printing"
+                class="img-fluid service-img"
+              />
+              <h6>Digital Printing</h6>
+              <p>
+                lorem ipsum is simply dummy text of the printing and types in
+                the industry print
+              </p>
+              <img src="./assets/arrow-right-circle.svg" alt="right arrow" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card c4">
+              <img
+                src="./assets/print.png"
+                alt="digital printing"
+                class="img-fluid service-img"
+              />
+              <h6>Digital Printing</h6>
+              <p>
+                lorem ipsum is simply dummy text of the printing and types in
+                the industry print
+              </p>
+              <img src="./assets/arrow-right-circle.svg" alt="right arrow" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gallery  -->
+    <section class="container-fluid gallery">
+      <div class="container">
+        <header>
+          <h2>Gallery</h2>
+        </header>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <a
+              href="./assets/about2.jpg"
+              class="fancybox"
+              data-fancybox="gallery1"
+            >
+              <img src="./assets/about2.jpg" alt="gallery" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a
+              href="./assets/about2.jpg"
+              class="fancybox"
+              data-fancybox="gallery1"
+            >
+              <img src="./assets/about2.jpg" alt="gallery" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a
+              href="./assets/about2.jpg"
+              class="fancybox"
+              data-fancybox="gallery1"
+            >
+              <img src="./assets/about2.jpg" alt="gallery" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a
+              href="./assets/about2.jpg"
+              class="fancybox"
+              data-fancybox="gallery1"
+            >
+              <img src="./assets/about2.jpg" alt="gallery" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a
+              href="./assets/about2.jpg"
+              class="fancybox"
+              data-fancybox="gallery1"
+            >
+              <img src="./assets/about2.jpg" alt="gallery" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a
+              href="./assets/about2.jpg"
+              class="fancybox"
+              data-fancybox="gallery1"
+            >
+              <img src="./assets/about2.jpg" alt="gallery" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="primary large">View More</button>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial  -->
+    <section class="container-fluid testimonial">
+      <div class="container">
+        <header>
+          <h2>Testimonial</h2>
+          <div class="testimonial-slider">
+            <div class="testimonial-card">
+              <img
+                src="./assets/user.jpg"
+                alt="user"
+                class="img-fluid rounded-circle user"
+              />
+              <h3>Christopher</h3>
+              <h5>Creative Director</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+                laboriosam recusandae deserunt odit a quasi
+              </p>
+              <div class="ratings">
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <img
+                src="./assets/user.jpg"
+                alt="user"
+                class="img-fluid rounded-circle user"
+              />
+              <h3>Christopher</h3>
+              <h5>Creative Director</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+                laboriosam recusandae deserunt odit a quasi
+              </p>
+              <div class="ratings">
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <img
+                src="./assets/user.jpg"
+                alt="user"
+                class="img-fluid rounded-circle user"
+              />
+              <h3>Christopher</h3>
+              <h5>Creative Director</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+                laboriosam recusandae deserunt odit a quasi
+              </p>
+              <div class="ratings">
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <img
+                src="./assets/user.jpg"
+                alt="user"
+                class="img-fluid rounded-circle user"
+              />
+              <h3>Christopher</h3>
+              <h5>Creative Director</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+                laboriosam recusandae deserunt odit a quasi
+              </p>
+              <div class="ratings">
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+                <img
+                  src="./assets/star.png"
+                  alt="ratings"
+                  class="img-fluid star"
+                />
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+    <!-- footer  -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#231F20"
+        fill-opacity="1"
+        d="M0,160L80,144C160,128,320,96,480,117.3C640,139,800,213,960,234.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+    </svg>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h4>Contact Us</h4>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <input
+                  type="text"
+                  class="form-control mb-3"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <input
+                  type="email"
+                  class="form-control mb-3"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+            </div>
+            <button class="primary mt-3">Submit</button>
+          </div>
+          <div class="col-12 col-md-2 mt-4 mt-md-0">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Testimonial</li>
+              <li>Gallery</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 mt-4 mt-md-0">
+            <h4>Quick Contact</h4>
+            <ul class="contact">
+              <li>
+                <img src="./assets/map-pin.svg" alt="address" /><span
+                  >123 Cabin Drive, Plain view, New York 12345</span
+                >
+              </li>
+              <li>
+                <img src="./assets/phone.svg" alt="call" /><span
+                  >+91 944477737</span
+                >
+              </li>
+              <li>
+                <img src="./assets/mail.svg" alt="mail" /><span
+                  >info@service.com</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 mt-4 mt-md-0">
+            <img
+              src="./assets/logo-dark.png"
+              alt="logo"
+              class="img-fluid mb-2"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              soluta eligendi et alias sequi amet,
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="container">
+        <p class="m-0">Copyright 2021, All rights reserved</p>
+        <ul>
+          <li>
+            <img src="./assets/facebook.svg" alt="facebook" />
+          </li>
+          <li>
+            <img src="./assets/twitter.svg" alt="facebook" />
+          </li>
+          <li>
+            <img src="./assets/linkedin.svg" alt="facebook" />
+          </li>
+          <li>
+            <img src="./assets/youtube.svg" alt="facebook" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slider  -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- js  -->
+    <script src="./index.js"></script>
+  </body>
+</html>
