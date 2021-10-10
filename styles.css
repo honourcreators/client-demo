@@ -11,6 +11,7 @@
 }
 :root {
   --primary-color: #eb3103;
+  --primary-dark: #bd2803;
   --light: #f8f9fa;
   --text-secondary: #6c757d;
   --blue: #54b7e2;
@@ -34,6 +35,10 @@ button.primary {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+button.primary:hover {
+  background-color: var(--primary-dark);
+  transition: all 0.4s ease;
 }
 button.primary.large {
   padding: 0.6em 2em;
@@ -66,7 +71,7 @@ nav img.logo {
 }
 /* hero section  */
 .hero-section {
-  min-height: 95vh;
+  min-height: 75vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('./assets/hero.jpg');
   background-size: cover;
@@ -78,7 +83,7 @@ nav img.logo {
     url('./assets/about-hero.jpg');
 }
 
-.hero-section svg {
+.hero-section .wave {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -95,6 +100,9 @@ nav img.logo {
 .about .content h2 {
   position: relative;
   padding-bottom: 0.5em;
+}
+.team h2 {
+  margin-bottom: 1.2em;
 }
 .team h2::after,
 .about .content h2::after {
@@ -115,6 +123,25 @@ nav img.logo {
 }
 .team-card {
   height: 97%;
+}
+.team-card .card-top {
+  position: relative;
+}
+.team-card .card-top .hover-state {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.team-card:hover .hover-state {
+  opacity: 1;
 }
 .team-card h6 {
   color: var(--primary-color);
@@ -152,6 +179,7 @@ section.products {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.1em;
+  border-radius: 8px;
 }
 .products .product-card:hover button {
   opacity: 1;
