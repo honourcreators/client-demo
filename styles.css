@@ -23,6 +23,11 @@ h3,
 h4 {
   font-family: 'Open Sans', sans-serif;
 }
+
+a{
+  text-decoration: none;
+  
+}
 button {
   border: none;
   outline: none;
