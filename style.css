@@ -591,7 +591,16 @@ textarea:focus {
   border-radius: 6px; }
   .single-cool-facts-area img {
     display: block;
+    opacity: 0.5;
+    transition: 0.3s;
     margin: 0 auto 15px; }
+
+  .single-cool-facts-area img:hover {
+      display: block;
+      opacity: 1;
+      margin: 0 auto 15px; }
+
+
   .single-cool-facts-area h2 {
     font-size: 36px;
     margin-bottom: 5px;
